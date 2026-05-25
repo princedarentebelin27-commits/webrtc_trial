@@ -11,6 +11,5 @@ class VideoProcessor:
         return av.VideoFrame.from_ndarray(edging,format = "bgr24")
     
 webrtc_streamer(key = "key",  rtc_configuration={
-        "iceServers": [{"urls": ["stun:://google.com"]}]
+        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
     },video_processor_factory= VideoProcessor)
-
